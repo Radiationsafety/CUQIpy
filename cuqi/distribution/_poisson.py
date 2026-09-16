@@ -56,13 +56,13 @@ class Poisson(Distribution):
         Parameters
         ----------
         x : int, float, or ndarray
-            Point at which to evaluate the log-PMF. Non-negative integers are
+            Point at which to evaluate the log-pdf. Non-negative integers are
             in the support; negative values or non-integers yield ``-inf``.
 
         Returns
         -------
         float
-            Sum of log-PMF values over all components.
+            Sum of log-pdf values over all components.
         """
         if isinstance(x, (float, int)):
             x = np.array([x])
